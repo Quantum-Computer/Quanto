@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantoria — Theory Meets Demonstration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+
+    <div class="page">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo">Q</div>
+          <div>
+            <strong>Quantoria</strong>
+            <span>THEORY MEETS DEMONSTRATION</span>
+          </div>
+        </div>
+
+        <nav>
+          <a class="active" href="#">Explore</a>
+          <a href="#">Research</a>
+          <a href="#">Demos</a>
+          <a href="#">Library</a>
+          <a href="#">Community</a>
+          <a href="#">About</a>
+        </nav>
+
+        <button class="launch">Launch App →</button>
+      </header>
+
+      <main class="hero-grid">
+        <section class="hero-copy panel">
+          <h1>Quantum Computing Beyond Hardware</h1>
+          <p>
+            Cutting-edge mathematical theory. Live quantum circuit demonstrations. Deep understanding through interactive exploration.
+          </p>
+          <div class="cta-row">
+            <button class="btn primary">Start Exploring</button>
+            <button class="btn ghost">Watch Intro</button>
+          </div>
+
+          <article class="mini-demo">
+            <small>● LIVE DEMONSTRATION</small>
+            <h3>ZX-Calculus: Spider Fusion</h3>
+            <p>Simplify. Execute. Understand.</p>
+            <div class="gate-row">
+              <span>|00⟩</span>
+              <div class="g"></div><div class="g"></div><div class="g"></div>
+              <span>=</span>
+              <b class="pulse"></b>
+            </div>
+          </article>
+        </section>
+
+        <section class="hero-visual panel">
+          <canvas id="orbCanvas" aria-label="Interactive quantum sphere"></canvas>
+          <aside class="overlay-card">
+            <h4>INTERACTIVE 3D</h4>
+            <p>Drag to rotate · Scroll to zoom</p>
+            <hr />
+            <p><strong>Quantum State</strong></p>
+            <p>|ψ⟩ = α|0⟩ + β|1⟩</p>
+            <p>α = 0.707 + 0.000i</p>
+            <p>β = 0.707 + 0.000i</p>
+          </aside>
+        </section>
+
+        <aside class="research panel">
+          <h3>RESEARCH AREAS</h3>
+          <ul id="researchList"></ul>
+        </aside>
+      </main>
+
+      <section class="feature-strip panel">
+        <div>Live Quantum Simulations<br /><span>Run circuits in real-time</span></div>
+        <div>Interactive 3D Visualizations<br /><span>Explore mathematical structures</span></div>
+        <div>Research-Grade Tools<br /><span>Built for deep exploration</span></div>
+        <div>Open Research Platform<br /><span>Share, collaborate, advance</span></div>
+      </section>
+
+      <section class="cards">
+        <h2>EXPLORE RESEARCH AREAS</h2>
+        <div id="cardGrid" class="card-grid"></div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
